@@ -1,0 +1,83 @@
+html,
+body {
+  background-color: white;
+  font-family: 'Montserrat' !important;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+.grayPanel {
+  background-color: #f2f2f2;
+}
+
+.bannerSize {
+  width: 100%;
+  height: 650px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 43.88px;
+}
+
+.subheading {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+}
+
+.imgStyle {
+  width: 225px;
+  height: 300px;
+}
+
+.cartImgSize {
+  width: 100%;
+}
+
+.instaImg {
+  width: 225px;
+  height: 225px;
+}
+
+.discounted {
+  color: #c1272d;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+}
+
+.buttonStyle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+}
+
+.paymentIconSize {
+  width: 37.5px;
+  height: 25px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.benefitsBar {
+  height: 50px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+}
+
+.footer {
+  height: 360px;
+}

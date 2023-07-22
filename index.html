@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links -->
+    <link type="text/css" rel="stylesheet" href="./styles/styles.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/navbar.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/sitewidedeals.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/vip.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/trending.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/newarrival.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/insta.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ehrlich Code Challenge</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg mainNavbar">
+      <div class="container-fluid">
+        <!-- Left Navbar -->
+        <div class="d-flex">
+          <a class="nav-link leftNavbar test mx-3" href="#">WOMEN</a>
+          <a class="nav-link leftNavbar mx-3" href="#">PLUS</a>
+          <a class="nav-link leftNavbar mx-3" href="#">MEN</a>
+          <a class="nav-link leftNavbar mx-3" href="#">ACCESSORIES</a>
+        </div>
+        <!-- Logo -->
+        <div><span class="logo">THREADED</span></div>
+        <!-- Right Navbar -->
+        <div class="d-flex">
+          <img class="mx-3" src="./assets/navbar-icons/bx_bx-user.svg" />
+          <img
+            id="cartButton"
+            class="viewCart pointer mx-3"
+            src="./assets/navbar-icons/bx_bx-shopping-bag.svg"
+          />
+          <span
+            id="cartBadge"
+            class="badge text-bg-danger rounded-pill my-3 viewCart pointer d-none"
+          ></span>
+          <img class="mx-3" src="./assets/navbar-icons/bx_bx-heart.svg" />
+          <img class="mx-3" src="./assets/navbar-icons/bx_bx-support.svg" />
+          <img class="mx-3" src="./assets/navbar-icons/bx_bx-search.svg" />
+          <div class="dropdown mt-2">
+            <a
+              class="btn btn-light dropdown-toggle rounded-5"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/us_flag.png" alt="usd" class="mx-2" />USD $
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="./assets/us_flag.png" alt="usd" class="mx-2" />USD
+                  $</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Benefits -->
+    <div class="benefitsBar d-flex justify-content-evenly align-items-center">
+      <div>
+        <img src="./assets/benefits-icons/bx_bx-crown.svg" />
+        <span>Exclusive Deals for VIP 2 and up!</span>
+      </div>
+      <div>
+        <img src="./assets/benefits-icons/bx_bx-star.svg" />
+        <span>Weekly New Arrivals</span>
+      </div>
+      <div>
+        <img src="./assets/benefits-icons/mdi_truck-delivery-outline.svg" />
+        <span>Free Shipping On Orders Over $100</span>
+      </div>
+      <div>
+        <img src="./assets/benefits-icons/bx_bx-map-pin.svg" />
+        <span>Track Your Order</span>
+      </div>
+      <div>
+        <img src="./assets/benefits-icons/bx_bx-purchase-tag.svg" />
+        <span>10% Off On Your First Order!</span>
+      </div>
+    </div>
+    <!-- Banner -->
+    <img src="./assets/Hero.png" alt="" class="bannerSize" />
+    <!-- Site-wide -->
+    <div class="sitewideBar d-flex justify-content-evenly align-items-center">
+      <div class="d-flex flex-column">
+        <div class="d-flex justify-content-evenly align-items-center">
+          <span class="value">$5</span>
+          <span class="off">OFF</span>
+        </div>
+        <span class="desc">ON ORDERS ABOVE $50</span>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="d-flex justify-content-evenly align-items-center">
+          <span class="value">$15</span>
+          <span class="off">OFF</span>
+        </div>
+        <span class="desc">ON ORDERS ABOVE $75</span>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="d-flex justify-content-evenly align-items-center">
+          <span class="value">$20</span>
+          <span class="off">OFF</span>
+        </div>
+        <span class="desc">ON ORDERS ABOVE $150</span>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="d-flex justify-content-evenly align-items-center">
+          <span class="value">$30</span>
+          <span class="off">OFF</span>
+        </div>
+        <span class="desc">ON ORDERS ABOVE $200</span>
+      </div>
+      <span class="btn btn-dark siteWideButton rounded-0"
+        >CHECK OUT ALL SITE-WIDE DEALS</span
+      >
+    </div>
+    <!-- Black Friday Exclusive -->
+    <div class="vipBar d-flex justify-content-evenly align-items-center mb-5">
+      <span class="vipHeader">BLACK FRIDAY EXCLUSIVE</span>
+      <span class="vipText"
+        >FREE SHIPPING ON ALL ORDERS FOR <br />VIP 2 AND UP!</span
+      >
+      <span class="btn btn-light vipButton rounded-0">SHOP NOW</span>
+    </div>
+    <!-- Trending -->
+    <div
+      class="trendingBar d-flex flex-column justify-content-top align-items-center"
+    >
+      <span class="heading">Now Trending</span>
+      <span class="subheading mt-4">See what everyone's wearing right now</span>
+      <div class="container">
+        <div class="row justify-content-evenly align-items-center mt-5">
+          <div
+            class="col-3 d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/trending-images/winterfashion.png"
+              alt="winterfashion"
+              class="imgStyle"
+            />
+            <span class="category">WINTER FASHION</span>
+          </div>
+          <div
+            class="col-3 d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/trending-images/boots.png"
+              alt="winterfashion"
+              class="imgStyle"
+            />
+            <span class="category">BOOTS</span>
+          </div>
+          <div
+            class="col-3 d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/trending-images/nightout.png"
+              alt="winterfashion"
+              class="imgStyle"
+            />
+            <span class="category">NIGHT OUT</span>
+          </div>
+          <div
+            class="col-3 d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/trending-images/holidays.png"
+              alt="winterfashion"
+              class="imgStyle"
+            />
+            <span class="category">HOLIDAYS</span>
+          </div>
+        </div>
+        <div class="row justify-content-evenly align-items-center mt-5">
+          <div
+            class="col-3 d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/trending-images/outwear.png"
+              alt="winterfashion"
+              class="imgStyle"
+            />
+            <span class="category">OUTERWEAR</span>
+          </div>
+          <div
+            class="col-3 d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/trending-images/whitedresses.png"
+              alt="winterfashion"
+              class="imgStyle"
+            />
+            <span class="category">WHITE DRESSES</span>
+          </div>
+          <div
+            class="col-3 d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/trending-images/sweaters.png"
+              alt="winterfashion"
+              class="imgStyle"
+            />
+            <span class="category">SWEATERS</span>
+          </div>
+          <div
+            class="col-3 d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/trending-images/party.png"
+              alt="winterfashion"
+              class="imgStyle"
+            />
+            <span class="category">PARTY</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-5">
+          <span class="btn btn-light rounded-5 border hashtags mx-5"
+            >#Thanksgiving</span
+          >
+          <span class="btn btn-light rounded-5 border hashtags mx-5"
+            >#NewYears</span
+          >
+          <span class="btn btn-light rounded-5 border hashtags mx-5"
+            >#Knitted</span
+          >
+          <span class="btn btn-light rounded-5 border hashtags mx-5"
+            >#Pajamas</span
+          >
+          <span class="btn btn-light rounded-5 border hashtags mx-5">#WFH</span>
+          <span class="btn btn-light rounded-5 border hashtags mx-5"
+            >#FallFashion</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- New In -->
+    <div
+      class="newInBar d-flex justify-content-end align-items-center mb-5 pr-5"
+    >
+      <div class="d-flex flex-column m-5">
+        <span class="newInHeading mb-4">
+          NEW <br />
+          ARRIVALS</span
+        >
+        <span class="newInSubHeading mb-5"
+          >Get ready for the holidays with us!</span
+        >
+        <span class="btn btn-light rounded-0 newInButton">SHOP NOW</span>
+      </div>
+    </div>
+    <!-- Recently Bought -->
+    <div class="d-flex flex-column justify-content-start align-items-center">
+      <span class="heading">Recently Bought</span>
+      <div class="container p-0">
+        <div class="row justify-content-evenly align-items-center mt-4">
+          <div class="col d-flex flex-column align-items-center w-100">
+            <img
+              src="./assets/recently-bought/festive.png"
+              alt="Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit"
+              class="imgStyle"
+            />
+            <div class="d-flex flex-column ps-2">
+              <span class="subheading mt-2"
+                >Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</span
+              >
+              <span class="hashtags mt-2">$38</span>
+              <span data-itemid="1" class="btn btn-sm btn-dark mt-2 invItem"
+                >Buy</span
+              >
+            </div>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <img
+              src="./assets/recently-bought/chevron.png"
+              alt="Chevron Flap Crossbody Bag"
+              class="imgStyle"
+            />
+            <div class="d-flex flex-column ps-2 w-100">
+              <span class="subheading mt-2"
+                >Chevron Flap Crossbody Bag
+                <span class="text-white">_________</span>
+              </span>
+              <div>
+                <span class="hashtags discounted me-3">$5.77</span
+                ><span class="hashtags oldPrice">$7.34</span>
+              </div>
+              <span data-itemid="2" class="btn btn-sm btn-dark mt-2 invItem"
+                >Buy</span
+              >
+            </div>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <img
+              src="./assets/recently-bought/manila.png"
+              alt="Manilla Tan Multi Plaid Oversized Fringe Scarf"
+              class="imgStyle"
+            />
+            <div class="d-flex flex-column ps-2">
+              <span class="subheading mt-2"
+                >Manilla Tan Multi Plaid Oversized Fringe Scarf</span
+              >
+              <div>
+                <span class="hashtags discounted me-3">$29</span
+                ><span class="hashtags oldPrice">$39</span>
+              </div>
+              <span data-itemid="3" class="btn btn-sm btn-dark mt-2 invItem"
+                >Buy</span
+              >
+            </div>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <img
+              src="./assets/recently-bought/diamante.png"
+              alt="Diamante Puff Sleeve Dress - Black"
+              class="imgStyle"
+            />
+            <div class="d-flex flex-column ps-2">
+              <span class="subheading mt-2"
+                >Diamante Puff Sleeve Dress - Black</span
+              >
+              <span class="hashtags mt-2">$45.99</span>
+              <span data-itemid="4" class="btn btn-sm btn-dark mt-2 invItem"
+                >Buy</span
+              >
+            </div>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <img
+              src="./assets/recently-bought/banneth.png"
+              alt="Banneth Open Front Formal Dress In Black"
+              class="imgStyle"
+            />
+            <div class="d-flex flex-column ps-2">
+              <span class="subheading mt-2"
+                >Banneth Open Front Formal Dress In Black</span
+              >
+              <div>
+                <span class="hashtags discounted me-3">$69</span
+                ><span class="hashtags oldPrice">$99.95</span>
+              </div>
+              <span data-itemid="5" class="btn btn-sm btn-dark mt-2 invItem"
+                >Buy</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inspo -->
+    <div
+      class="instaBar d-flex flex-column justify-content-start align-items-center mt-5 pt-5"
+    >
+      <span class="heading">Your Next Inspo</span>
+      <span class="subheading mt-4 mb-3"
+        >Checkout who's wearing what by using #THREADEDInspo on Instagram</span
+      >
+      <div class="container p-0">
+        <div class="row justify-content-evenly align-items-center mt-5">
+          <div
+            class="col d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/insta/1.png"
+              alt="winterfashion"
+              class="instaImg"
+            />
+          </div>
+          <div
+            class="col d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/insta/2.png"
+              alt="winterfashion"
+              class="instaImg"
+            />
+          </div>
+          <div
+            class="col d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/insta/3.png"
+              alt="winterfashion"
+              class="instaImg"
+            />
+          </div>
+          <div
+            class="col d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/insta/4.png"
+              alt="winterfashion"
+              class="instaImg"
+            />
+          </div>
+          <div
+            class="col d-flex flex-column justify-content-evenly align-items-center"
+          >
+            <img
+              src="./assets/insta/5.png"
+              alt="winterfashion"
+              class="instaImg"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-evenly align-items-center mt-5 mb-5">
+          <span class="btn btn-dark rounded-0 instaButton buttonStyle"
+            >VIEW ALL POSTS</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Signup -->
+    <div
+      class="vipBar d-flex justify-content-evenly align-items-center"
+      style="background-image: none"
+    >
+      <span class="heading">SIGN UP FOR EXCLUSIVE DEALS AND UPDATES</span>
+      <form type="submit">
+        <div class="d-flex">
+          <input
+            class="form-control bg-light rounded-0"
+            type="email"
+            placeholder="Your Email Address"
+            style="width: 354px"
+          />
+          <div class="button-container">
+            <button class="btn btn-light rounded-0">
+              <img src="./assets/ant-design_right-outlined.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Footer -->
+    <div class="d-flex flex-column p-5">
+      <div class="row align-items-start mb-5">
+        <div class="col-auto me-5">
+          <span class="hashtags">COMPANY INFO</span>
+          <ul class="list-group mt-2">
+            <li class="nav-item my-2">
+              <a class="nav-link" href="#">About THREADED</a>
+            </li>
+            <li class="nav-item my-2">Affiliate</li>
+            <li class="nav-item my-2">Blog</li>
+            <li class="nav-item my-2">Careers</li>
+          </ul>
+        </div>
+        <div class="col-auto me-5">
+          <span class="hashtags">HELP & SUPPORT</span>
+          <ul class="list-group mt-2">
+            <li class="nav-item my-2">FAQ</li>
+            <li class="nav-item my-2">Shipping</li>
+            <li class="nav-item my-2">Returns</li>
+            <li class="nav-item my-2">How To Order</li>
+            <li class="nav-item my-2">How To Track</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <span class="hashtags">CUSTOMER CARE</span>
+          <ul class="list-group mt-2">
+            <li class="nav-item my-2">Contact Us</li>
+            <li class="nav-item my-2">Payment Methods</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <span class="hashtags">FOLLOW US</span>
+          <div class="mt-2 mb-3">
+            <img
+              src="./assets/socials-icons/bx_bxl-facebook.svg"
+              alt="facebook"
+            />
+            <img
+              src="./assets/socials-icons/bx_bxl-instagram.svg"
+              alt="instagram"
+              class="mx-2"
+            />
+            <img
+              src="./assets/socials-icons/bx_bxl-twitter.svg"
+              alt="twitter"
+              class="mx-2"
+            />
+            <img
+              src="./assets/socials-icons/bx_bxl-youtube.svg"
+              alt="youtube"
+              class="mx-2"
+            />
+            <img
+              src="./assets/socials-icons/bx_bxl-pinterest-alt.svg"
+              alt="pinterest"
+              class="mx-2"
+            />
+            <img
+              src="./assets/socials-icons/bx_bxl-tiktok.svg"
+              alt="tiktok"
+              class="mx-2"
+            />
+          </div>
+          <span class="hashtags">WE ACCEPT</span>
+          <div class="mt-2">
+            <img
+              src="./assets/payment-icons/visa.png"
+              alt="visa"
+              class="paymentIconSize"
+            />
+            <img
+              src="./assets/payment-icons/mastercard.png"
+              alt="instagram"
+              class="mx-2 paymentIconSize"
+            />
+            <img
+              src="./assets/payment-icons/maestro.png"
+              alt="twitter"
+              class="mx-2 paymentIconSize"
+            />
+            <img
+              src="./assets/payment-icons/amex.png"
+              alt="youtube"
+              class="mx-2 paymentIconSize"
+            />
+            <img
+              src="./assets/payment-icons/paypal.png"
+              alt="pinterest"
+              class="mx-2 paymentIconSize"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <div><span>©2021 THREADED All Rights Reserved.</span></div>
+        <div><span class="logo me-auto">THREADED</span></div>
+      </div>
+    </div>
+
+    <!-- cartModal -->
+    <div
+      class="modal fade"
+      id="modCart"
+      tabindex="-1"
+      aria-labelledby="modCartLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title fs-5 heading" id="modCartLabel">
+              SHOPPING BAG
+            </span>
+          </div>
+          <div id="modCartBody" class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div id="modCartItems" class="col border-top"></div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column p-3 border-top">
+            <div class="d-flex p-2">
+              <span>Total</span>
+              <span id="grandTotal" class="ms-auto fw-bold">0.00</span>
+            </div>
+            <a href="cart.html" class="btn btn-dark w-100 my-4 checkout">
+              PROCEED TO CHECKOUT
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cartModal -end -->
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="toastComponent"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-delay="2000"
+      >
+        <div id="toastMsg" class="toast-body"></div>
+      </div>
+    </div>
+    <!-- Toast -end -->
+
+    <script type="text/javascript" src="./js/cart.js"></script>
+  </body>
+</html>

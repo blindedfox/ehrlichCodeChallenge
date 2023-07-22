@@ -1,0 +1,14 @@
+.leftNavbar {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+}
+
+.logo {
+  font-size: 25px;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+}
+.mainNavbar {
+  height: 70px;
+}

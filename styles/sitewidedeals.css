@@ -1,0 +1,24 @@
+.sitewideBar {
+  height: 150px;
+}
+
+.value {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39.01px;
+}
+
+.off {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.desc {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.siteWideButton {
+  width: 363px;
+  height: 42px;
+}

@@ -1,0 +1,24 @@
+.vipBar {
+  height: 75px;
+  background-color: black;
+  background-image: url('../assets/vip_bg.png');
+  background-size: cover;
+  color: white;
+}
+
+.vipHeader {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 39.01px;
+}
+
+.vipText {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+}
+
+.vipButton {
+  width: 149px;
+  height: 42px;
+}

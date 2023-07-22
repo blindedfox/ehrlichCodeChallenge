@@ -1,0 +1,10 @@
+.instaBar {
+  height: 550px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+}
+
+.instaButton {
+  width: 198px !important;
+  height: 42px;
+}
